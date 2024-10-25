@@ -7,7 +7,7 @@ const Todo = () => {
     <div>
       {/* todos shared by to component hence state is used as props */}
      <Form todos={todos} setTodos={setTodos} />
-     <TodoList todos={todos}/>
+     <TodoList todos={todos} setTodos={setTodos}/>
     </div>
   );
 };

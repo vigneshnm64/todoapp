@@ -1,8 +1,21 @@
 import React from 'react'
-
-const TodoItem = ({item}) => {
+import styles from './item.module.css'
+const TodoItem = ({item,todos,setTodos}) => {
+  
+function handleDelete(item){
+  setTodos(todos.filter((todo)=>todo!==item))
+  
+}
   return (
-    <div>{item}</div>
+    <div className={styles.item}>
+    <div className={styles.itemName}>{item}
+    <span>
+       <button onClick={()=>handleDelete(item)} className={styles.deleteButton}>x</button>
+     </span>
+    </div>
+     
+    <hr className={styles.line} />
+      </div>
   )
 }
 

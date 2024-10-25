@@ -1,7 +1,8 @@
 import {React,useState} from 'react'
 import styles from './form.module.css'
 
-const Form = ({todos,setTodos}) => { // todos has been passed as prop because Todlist and this form shareasame state todos//
+const Form = ({todos,setTodos}) => { 
+  // todos has been passed as prop because Todlist and this form shareasame state todos//
     const [todo, setTodo] = useState("");
   
     function handleSubmit(e) {
