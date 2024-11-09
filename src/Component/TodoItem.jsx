@@ -8,7 +8,7 @@ function handleDelete(item){
 }
   return (
     <div className={styles.item}>
-    <div className={styles.itemName}>{item}
+    <div className={styles.itemName}>{item.name}
     <span>
        <button onClick={()=>handleDelete(item)} className={styles.deleteButton}>x</button>
      </span>

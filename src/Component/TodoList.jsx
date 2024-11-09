@@ -5,8 +5,8 @@ const TodoList = ({todos,setTodos}) => {
   return (
     <div className={styles.list}>
     {todos.map((item) => (
-        <h3 key={item}>
-            <TodoItem item={item} todos={todos} setTodos={setTodos}/>
+        <h3 key={item.name}>
+            <TodoItem item={item.name} todos={todos} setTodos={setTodos}/>
         </h3>
       ))}
 </div>
